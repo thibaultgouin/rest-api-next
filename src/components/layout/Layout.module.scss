@@ -1,0 +1,9 @@
+.container {
+  position: relative;
+  background: $darkColorVeryDarkBlue;
+  min-height: 100vh;
+
+  .contentWrapper {
+    padding: 40px 80px;
+  }
+}

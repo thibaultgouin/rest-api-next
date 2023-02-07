@@ -1,0 +1,25 @@
+.M03SearchBar {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+  background: $darkColorDarkBlue;
+
+  .searchIcon {
+    display: inline-flex;
+    padding: 0 16px 0 24px;
+  }
+
+  .searchInput {
+    width: 100%;
+    padding: 16px 40px 16px 16px;
+    border: 0;
+    color: $colorWhite;
+    background: $darkColorDarkBlue;
+
+    &::placeholder {
+      color: $colorWhite;
+    }
+  }
+}

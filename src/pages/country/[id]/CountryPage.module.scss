@@ -1,0 +1,55 @@
+.countryPage {
+  .container {
+    display: grid;
+    grid-gap: 80px;
+    margin-top: 80px;
+  }
+
+  .flagWrapper {
+    @include aspect-ratio(16, 9);
+    width: 100%;
+  }
+
+  .flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .informationWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .borderWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .borderLabel {
+    margin-right: 16px;
+  }
+
+  .borderButton {
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+
+  @include respond-to("MIN_768") {
+    .container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}

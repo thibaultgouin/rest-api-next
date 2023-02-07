@@ -1,0 +1,28 @@
+.b02Countries {
+  position: relative;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-gap: 32px;
+    z-index: zindex($zLayout, content);
+  }
+
+  @include respond-to("MIN_768") {
+    .container {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @include respond-to("MIN_1200") {
+    .container {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @include respond-to("MIN_1440") {
+    .container {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+}

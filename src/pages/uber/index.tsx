@@ -20,7 +20,7 @@ const UberPage = () => {
           if (index >= 0) {
             setClickPattern(clickPattern.slice(0, index));
             index--;
-            setTimeout(removeIndexFromPattern, 600);
+            setTimeout(removeIndexFromPattern, 500);
           }
         };
         removeIndexFromPattern();
